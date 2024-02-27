@@ -2,8 +2,8 @@ venv
 
 .env
 
-__pycache__/
+data/games.csv
 
 credentials.json
 
-data/games.csv
+__pycache__/
