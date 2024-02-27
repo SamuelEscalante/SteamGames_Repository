@@ -1,2 +1,9 @@
 venv
+
+.env
+
 data/games.csv
+
+credentials.json
+
+__pycache__/
