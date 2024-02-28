@@ -26,7 +26,8 @@ def get_engine():
 
     Parameters
     ----------
-    None
+    credentials : dict
+        A dictionary containing the database connection credentials
 
     Returns
     -------
@@ -47,24 +48,13 @@ def get_engine():
 
     url = f"{dialect}://{user}:{passwd}@{host}:{port}/{db}"
     try:
-
-        if not database_exists(url):
-            create_database(url)
-            print(f"Database not found, let's create: {db}", end='', flush=True)
-            for _ in range(5):  # Cambia el número según la duración deseada de la animación
-                time.sleep(0.5)  # Ajusta el tiempo de espera según sea necesario
-                print('.', end='', flush=True)
-            engine = create_engine(url)
-            print("created successfully.")
-            return engine
-        else:
-            engine = create_engine(url)
-            print(f'Conected successfully to {db}')
-            return engine
+        engine = create_engine(url)
+        print(f'Conected successfully to database {db}!')
+        return engine
     except SQLAlchemyError as e:
-        print(f'Error: {e}')
+        print(f'Error: {e}')
 
 """
  Make sure to replace the placeholder credentials with your actual database credentials.
 """
-
+get_engine()

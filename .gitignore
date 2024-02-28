@@ -1,8 +1,4 @@
 venv
-<<<<<<< HEAD
-games.csv
-data/games.csv
-=======
 
 .env
 
@@ -11,4 +7,3 @@ data/games.csv
 credentials.json
 
 __pycache__/
->>>>>>> development
