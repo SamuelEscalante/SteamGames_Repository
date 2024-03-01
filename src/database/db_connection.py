@@ -6,11 +6,10 @@ This module provides a utility function to establish a connection to a PostgreSQ
 from sqlalchemy import create_engine
 from sqlalchemy.exc import SQLAlchemyError
 from dotenv import load_dotenv
-from sqlalchemy_utils import database_exists, create_database
 import json
 import os
 import sys
-import time
+
 
 load_dotenv()
 working_dir = os.getenv('WORK_DIR')
@@ -57,4 +56,3 @@ def get_engine():
 """
  Make sure to replace the placeholder credentials with your actual database credentials.
 """
-get_engine()
