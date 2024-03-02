@@ -2,7 +2,7 @@ venv
 
 .env
 
-data/games.csv
+data/*
 
 credentials.json
 
