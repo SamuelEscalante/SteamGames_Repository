@@ -1,3 +1,4 @@
+
 """ 
 SQLAlchemy Table Definition 
 
@@ -44,14 +45,13 @@ Additional Attributes (Only in SteamGames):
 
 Additionally, both classes have a special _str_ method that provides a string representation of the associated table.
 """ 
-
 from sqlalchemy import Column, Integer, String, Date, Float
 from sqlalchemy.orm import declarative_base
 
 BASE = declarative_base()
 
 class Games(BASE):
-    _tablename_ = 'raw_games'
+    __tablename__ = 'raw_games'
     AppID = Column(Integer, primary_key=True, nullable=False)
     Name = Column(String(), nullable=False)
     ReleaseDate = Column(Date, nullable=False)
@@ -93,7 +93,7 @@ class Games(BASE):
     Movies = Column(String(), nullable=True)
 
 class SteamGames(BASE):
-    _tablename_ = 'steam_games'
+    __tablename__ = 'steam_games'
     AppID = Column(Integer, primary_key=True, nullable=False)
     Name = Column(String(), nullable=False)
     ReleaseDate = Column(Date, nullable=False)
