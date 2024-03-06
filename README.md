@@ -89,13 +89,14 @@ Information of more than 85,000 games published on Steam
 ```bash
   ./venv/Scripts/activate
 ```
-
-5. Install libreries
+5. Create a data folder in the root of the project, in this folder you should load the initial csv and here all the additional csv files will be loaded.
+   
+6. Install libreries
 ```bash
   pip install -r requirements.txt
 ```
 
-6. Create a configuration file named `credentials.json` in the project's root directory and add the following keys to the file:
+7. Create a configuration file named `credentials.json` in the project's root directory and add the following keys to the file:
 ```json
 {
   "DIALECT": "The database dialect or type. In this case, it is set to 'postgres' for PostgreSQL.",
@@ -108,15 +109,19 @@ Information of more than 85,000 games published on Steam
 
 ```
 
-7. Create a `.env` file and add this variable:  
+8. Create a `.env` file and add this variable:  
    `WORK_DIR` <- Sets the working directory for the application, indicating the base path for performing operations and managing files.
    
-8. Create a database in PostgreSQL (Make sure it has the same name as your file `credentials.json`)}
+9. Create a database in PostgreSQL (Make sure it has the same name as your file `credentials.json`)
 
-9. Explore the project, you shoul start by folder **notebooks** :
+10. Explore the project, you shoul start by folder **notebooks** :
    - _001_load_data:_  this notebook focused on initial data insertion into database
    - _EDA/002_raw_eda:_ this notebook is the Exploratory Data Analysis
    - _003_adicional_csvs:_ the output of this notebook is additional CSV files that are explained in the notebook and will be saved inside the `data` folder
+
+
+11. Go to PowerBi:
+
 ## Farewell and Thanks
 
 Thank you for visiting our repository! We hope you find this project useful. If it has been helpful or you simply liked it, consider giving the repository a star! 🌟
