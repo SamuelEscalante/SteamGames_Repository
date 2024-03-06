@@ -120,7 +120,27 @@ Information of more than 85,000 games published on Steam
    - _003_adicional_csvs:_ the output of this notebook is additional CSV files that are explained in the notebook and will be saved inside the `data` folder
 
 
-11. Go to PowerBi:
+11. **Go to PowerBi:**  
+  11.1 In Power BI Desktop, click Get Data then choose the More option at the bottom:    
+    ![image](https://github.com/SamuelEscalante/SteamGames_Repository/assets/111151068/14e95b7f-a726-4fd9-a4c2-199585fbe136)
+    
+  11.2 **Choose PostgreSQL:** Click the Database option on the left, then choose PostgreSQL database.  
+  
+  11.3 **Enter DB Info**  
+  - Under Server enter the hostname of your PostgreSQL database.  
+  - Under Database provide the database to connect to.  
+    ![image](https://github.com/SamuelEscalante/SteamGames_Repository/assets/111151068/859a99cc-2013-4fdc-9e81-b8e5f036db38)
+
+  11.4 **Enter Authentication Credentials:** Select the Database authentication type and input your PostgreSQL credentials in the User name and Password boxes.  
+    ![image](https://github.com/SamuelEscalante/SteamGames_Repository/assets/111151068/434dada0-20c2-478c-a50d-d7269fa43a01)
+
+  11.5 **Select Data:** In the Navigator window, select the data you require, then either load or transform the data.  
+    ![image](https://github.com/SamuelEscalante/SteamGames_Repository/assets/111151068/44b0087c-c3d7-4955-83be-24d5828c4216)
+
+  11.6 **Get data from CSV:** finally get data again and load the additional csv files generated.
+    ![image](https://github.com/SamuelEscalante/SteamGames_Repository/assets/111151068/1022652b-61e8-44e8-8de2-64006c18309d)
+
+### You can view our dashboard [here](SteamGamesDashboard.pdf)
 
 ## Farewell and Thanks
 
